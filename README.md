@@ -18,10 +18,10 @@ Copy `flarekey-runtime-sdk.lua` into your public SDK repository or serve it from
 ## Basic usage
 
 ```lua
-local Runtime = loadstring(game:HttpGet("https://YOUR-FLAREKEY-HOST/v1/sdk/runtime.lua"))()
+local Runtime = loadstring(game:HttpGet("https://raw.githubusercontent.com/fhwifmw/FlareKey-Runtime-Logging-SDK/refs/heads/main/flarekey-runtime-sdk.lua"))()
 
 local telemetry = Runtime.new({
-    apiBase = "https://YOUR-FLAREKEY-HOST",
+    apiBase = "https://flarekey.xyz",
     serviceId = "svc_...",
     scriptId = "scr_...",
     sessionToken = FlareKey._session
